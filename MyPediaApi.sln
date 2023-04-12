@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPediaApi", "MyPediaApi\MyPediaApi.csproj", "{C0CCE538-783E-4C14-B78A-1D62A594CE4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPediya.Services", "MyPediya.Services\MyPediya.Services.csproj", "{1172B218-6B87-416D-9103-8ABFDB410D40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0CCE538-783E-4C14-B78A-1D62A594CE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CCE538-783E-4C14-B78A-1D62A594CE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CCE538-783E-4C14-B78A-1D62A594CE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CCE538-783E-4C14-B78A-1D62A594CE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1172B218-6B87-416D-9103-8ABFDB410D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1172B218-6B87-416D-9103-8ABFDB410D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1172B218-6B87-416D-9103-8ABFDB410D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1172B218-6B87-416D-9103-8ABFDB410D40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E471D1A9-E3EA-4C33-85E8-964D0F7477DD}
+	EndGlobalSection
+EndGlobal
