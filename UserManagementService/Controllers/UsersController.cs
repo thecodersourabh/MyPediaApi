@@ -43,16 +43,17 @@ namespace UserManagementService.Controllers
 
             return Ok("User registered successfully!");
         }
-
-        [HttpPost]
-        public IActionResult RegisterMany([FromBody] IEnumerable<Users> users)
+        [HttpGet]
+        public IActionResult GetUserByNameAndPassword(string name, string password)
         {
-            // Add validation and error handling as needed
+            // Retrieve a user from the MongoDB collection using the injected MongoRepository
+            var user = _mongoRepository.GetByNameAndPassword(name, password);
+            if (user == null)
+            {
+                return NotFound();
+            }
 
-            // Insert multiple users into the MongoDB collection using the injected MongoRepository
-            _mongoRepository.InsertMany(users);
-
-            return Ok("Users registered successfully!");
+            return Ok(user);
         }
 
         [HttpGet("{id}")]

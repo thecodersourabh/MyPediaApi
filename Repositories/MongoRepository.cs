@@ -1,4 +1,5 @@
 ﻿using Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Repositories;
@@ -20,6 +21,11 @@ public class MongoRepository<T> : IMongoRepository<T>
     public void InsertMany(IEnumerable<T> entities)
     {
         _collection.InsertMany(entities);
+    }
+    public T GetByNameAndPassword(string name, string password)
+    {
+        var filter = Builders<T>.Filter.Eq("EmailId", name) & Builders<T>.Filter.Eq("Password", password);
+        return _collection.Find(filter).FirstOrDefault();
     }
 
     public T GetById(object id)
